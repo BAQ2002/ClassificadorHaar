@@ -16,9 +16,8 @@ O classificador não conseguiu identificar nenhuma das laranjas na pequena amost
 ## Hipósteses:
 Os resultados ruins podem ter sido obtidos pela quantidade pequena de imagens no treinamento.
 
-O algoritmo pode não identificar laranjas muito bem.
+O algoritmo pode não identificar laranjas muito bem. O Haar Cascade depende de características simples (retângulos claros e escuros) para detectar objetos. Objetos com formas mais complexas ou variações nas texturas, como laranjas (superfície rugosa e detalhes sutis), podem não ser bem representados por essas características.
 
-O Haar Cascade depende de características simples (retângulos claros e escuros) para detectar objetos. Objetos com formas mais complexas ou variações nas texturas, como laranjas (superfície rugosa e detalhes sutis), podem não ser bem representados por essas características.
 Ruído no Background das imagens selecionadas.
 
 
