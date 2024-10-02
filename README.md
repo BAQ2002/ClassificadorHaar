@@ -6,7 +6,7 @@ O dataset está disponivel em: https://images.cv/dataset/orange-image-classifica
 
 O tutorial com código seguido para o treinamamento classificador está disponivel: https://github.com/felipecbarelli/livro-visao-computacional/blob/master/tutoriais/creating-a-cascade-of-haar-like-classifiers.pdf.
 
-Nenhuma etapa de préprocessamento foi aplicada no dataset, a não ser a mudança de suas extenções de .jpeg para .bmp com a ajuda de ./transform.py. Foram selecioadnadas apenas 189 imagens aleatórias do dataset de laranjas de treino.
+Nenhuma etapa de préprocessamento foi aplicada no dataset, a não ser a mudança de suas extenções de .jpeg para .bmp com a ajuda de ./transform.py. Foram selecionadas apenas 189 imagens aleatórias do dataset de laranjas de treino.
 
 O resultado foi aplicado em algumas imagens de teste, disponiveis em: https://colab.research.google.com/drive/1jQR7ckUVhfSNtevU7U_g6uuSjwQ1aGx_?usp=sharing.
 
