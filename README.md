@@ -2,26 +2,19 @@
 
 Este repositório contém o processo de treinamento do classificado Haar para idenficação de laranjas.
 
-O dataset está disponivel em: https://images.cv/dataset/orange-image-classification-dataset
+O dataset está disponivel em: https://images.cv/dataset/orange-image-classification-dataset : mais imagens foram coletadas por outras fontes como bing images
 
 O tutorial com código seguido para o treinamamento classificador está disponivel: https://github.com/felipecbarelli/livro-visao-computacional/blob/master/tutoriais/creating-a-cascade-of-haar-like-classifiers.pdf.
 
-Nenhuma etapa de préprocessamento foi aplicada no dataset, a não ser a mudança de suas extenções de .jpeg para .bmp com a ajuda de ./transform.py. Foram selecionadas apenas 189 imagens aleatórias do dataset de laranjas de treino.
+Nenhuma etapa de préprocessamento foi aplicada no dataset, a não ser a mudança de suas extenções de .jpeg para .bmp com a ajuda de ./transform.py. Foram selecionadas 274 imagens aleatórias de laranjas para o treino e 338 imagens negativas.
 
 O resultado foi aplicado em algumas imagens de teste, disponiveis em: https://colab.research.google.com/drive/1jQR7ckUVhfSNtevU7U_g6uuSjwQ1aGx_?usp=sharing.
 
-## Resultados:
-O classificador não conseguiu identificar nenhuma das laranjas na pequena amostra de teste, mesmo variando os hiperparematros de vizinhos, fator de escala e tamanho da slinding windown. Mesmo de repetido o processo de treinamento e de anotação de imagens 4 vezes, o resultado continuou o mesmo, descartando a possibilidade de ser algum erro de execução ou má qualidade de anotação das imagens.
-
-## Hipósteses:
-Os resultados ruins podem ter sido obtidos pela quantidade pequena de imagens no treinamento.
-
-O algoritmo pode não identificar laranjas muito bem. O Haar Cascade depende de características simples (retângulos claros e escuros) para detectar objetos. Objetos com formas mais complexas ou variações nas texturas, como laranjas (superfície rugosa e detalhes sutis), podem não ser bem representados por essas características.
-
-Ruído no Background das imagens selecionadas.
+## Resultados Atualizados:
+O classificador foi capaz de identificar as laranjas na pequena amostra de teste, variando os hiperparematros de vizinhos, fator de escala e tamanho da slinding windown. A partir dos resultandos anteriores onde o classificador não foi capaz de intentificar as laranjas, foram necessarias algumas medidas nas amostras de imagens positivas e principalmente das imagens negativas, como : adição de objetos com a forma esférica semelhante ao objeto alvo, cenários em que o objeto pode ser encotrado, como geladeiras, arvores e supermercados.
 
 ## Constatações:
-A fruta laranja pode ser um objeto desafiador para o treinamento de um classificador Haar, especialmente por alguns motivos relacionados à sua forma e textura visual:
+A fruta laranja pé um objeto desafiador para o treinamento de um classificador Haar, especialmente por alguns motivos relacionados à sua forma e textura visual:
 
 ### Pontos Positivos:
 
